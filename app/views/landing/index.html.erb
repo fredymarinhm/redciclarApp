@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RedCiclar</title>
+    <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-ligh" style="background-color: #66bb33;">
+        <a class="navbar-brand" href="#">Acerca de nosotros</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Cómo reciclar
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Centros de recolección</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sistema de puntos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">¡Vincúlate!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Section main-->
+    <section class="section_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 center">
+                    <%= image_tag  "user.png", class: 'img_landing' %>
+                </div>
+                <div class="col-md-4 center">
+                </div>
+                <div class="col-md-4 center">
+                    <%= image_tag  "can.png", class: 'img_landing' %>
+                </div>
+            </div>
+            <div class="row"> 
+                
+                    <%= image_tag  "recicle.png", class: 'center'%>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-4 center">
+                    <%= image_tag  "telephone.png", class: 'img_landing' %>
+                </div>
+                <div class="col-md-4 center">
+                </div>
+                <div class="col-md-4 center">
+                    <%= image_tag  "center.png", class: 'img_landing' %>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Acerca de nosotros-->
+    <section>
+        <div class="container">
+            <h2>Acerca de nosotros</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas quo autem eveniet labore commodi sed id voluptate inventore
+            quasi. Cumque earum consectetur dolor laborum cum possimus quisquam numquam exercitationem!
+        </div>
+    </section>
+    <!--Cómo reciclar-->
+    <section>
+        <div class="container">
+            <h2>Cómo reciclar</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas quo autem eveniet labore commodi sed id voluptate inventore
+            quasi. Cumque earum consectetur dolor laborum cum possimus quisquam numquam exercitationem!
+        </div>
+    </section>
+    <!--Centros de recolección-->
+    <section>
+        <div class="container">
+            <h2>Centros de recolección</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas quo autem eveniet labore commodi sed id voluptate inventore
+            quasi. Cumque earum consectetur dolor laborum cum possimus quisquam numquam exercitationem!
+        </div>
+    </section>
+    <!--Sistema de puntos-->
+    <section>
+        <div class="container">
+            <h2>Sistema de puntos</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas quo autem eveniet labore commodi sed id voluptate inventore
+            quasi. Cumque earum consectetur dolor laborum cum possimus quisquam numquam exercitationem!
+        </div>
+    </section>
+    <!--Vincúlate-->
+    <section>
+        <div class="container">
+            <h2>¡Vincúlate!</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas quo autem eveniet labore commodi sed id voluptate inventore
+            quasi. Cumque earum consectetur dolor laborum cum possimus quisquam numquam exercitationem!
+        </div>
+    </section>
+</body>
+
+</html>

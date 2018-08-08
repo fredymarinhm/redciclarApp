@@ -1,0 +1,22 @@
+<!--
+  Generated template for the ImageInfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>imageInfo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <img src="http://localhost:3000{{img}}" >
+  <div padding> 
+    <div class="fecha">{{fecha | date:'M/d/yyyy HH:mm:ss'}}</div>
+    <p>{{ description }}</p>
+  </div>
+</ion-content>
