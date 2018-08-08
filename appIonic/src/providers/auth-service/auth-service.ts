@@ -1,8 +1,9 @@
 import { Http, Headers, RequestOptions } from '@angular/http';
 import { Injectable } from '@angular/core';
+import { UrlserverProvider } from '../urlserver/urlserver';
 
 //Variable para realizar llamdo a la API
-let apiUrl = 'http://localhost:3000/api/v1/';
+var apiUrl;
 
 /*
   Generated class for the AuthServiceProvider provider.
@@ -13,8 +14,9 @@ let apiUrl = 'http://localhost:3000/api/v1/';
 @Injectable()
 export class AuthServiceProvider {
 
-  constructor(public http: Http) {
+  constructor(public http: Http, public urlserverprovider: UrlserverProvider) {
     console.log('Hello AuthServiceProvider Provider');
+    apiUrl = urlserverprovider + 'api/v1/';
   }
 
   postData(credentials, type){

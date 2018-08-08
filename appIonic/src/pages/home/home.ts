@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, MenuController } from 'ionic-angular';
 import { ImagesProvider } from '../../providers/images/images';
 import { ImageInfoPage } from '../image-info/image-info';
+import { UrlserverProvider } from '../../providers/urlserver/urlserver';
 
 @Component({
   selector: 'page-home',
@@ -11,8 +12,11 @@ export class HomePage {
   public userDetails: any;
   images: any;
   respounce: any;
-  constructor(public navCtrl: NavController, public menu: MenuController, public ImagesProvider: ImagesProvider, public imagesProvider: ImagesProvider) {
-    
+  urlserver: any;
+
+  constructor(public navCtrl: NavController, public menu: MenuController, public ImagesProvider: ImagesProvider, public imagesProvider: ImagesProvider,
+    public urlserverprovider:UrlserverProvider) {
+    this.urlserver = urlserverprovider;
     const data= JSON.parse(localStorage.getItem('user'));
     this.userDetails = data.user;
     this.getImagesHome();

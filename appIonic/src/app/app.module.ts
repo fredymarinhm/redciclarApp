@@ -17,6 +17,7 @@ import { SignUpPage } from '../pages/sign-up/sign-up';
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 import { ImagesProvider } from '../providers/images/images';
 import { ImageInfoPage } from '../pages/image-info/image-info';
+import { UrlserverProvider } from '../providers/urlserver/urlserver';
 
 
 
@@ -52,7 +53,8 @@ import { ImageInfoPage } from '../pages/image-info/image-info';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthServiceProvider,
-    ImagesProvider
+    ImagesProvider,
+    UrlserverProvider
   ]
 })
 export class AppModule {}

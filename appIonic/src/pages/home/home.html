@@ -14,7 +14,7 @@
   <ion-list >
     <ion-item *ngFor="let image of images">
       <div class="img-content" item-left>
-        <img src="http://localhost:3000/{{image.picture.medium.url}}" class="img-thump">
+        <img src="{{urlserver}}{{image.picture.medium.url}}" class="img-thump">
       </div>
       <h2 class="description-image">{{ image.description }}</h2>
       <p>{{ image.created_at | date:'M/d/yyyy HH:mm:ss' }}</p>

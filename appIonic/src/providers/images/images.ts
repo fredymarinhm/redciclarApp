@@ -1,6 +1,8 @@
 import { Http, Headers, RequestOptions } from '@angular/http';
 import { Injectable } from '@angular/core';
-let apiUrl = 'http://localhost:3000/api/v1/'
+import { UrlserverProvider } from '../urlserver/urlserver';
+
+var apiUrl
 
 /*
   Generated class for the ImagesProvider provider.
@@ -11,8 +13,9 @@ let apiUrl = 'http://localhost:3000/api/v1/'
 @Injectable()
 export class ImagesProvider {
 
-  constructor(public http: Http) {
+  constructor(public http: Http, public urlserverprovider:UrlserverProvider) {
     console.log('Hello ImagesProvider Provider');
+    apiUrl =  urlserverprovider + 'api/v1/'
   }
 
   getImage(auth){
