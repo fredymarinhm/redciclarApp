@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def thatEnvirnoment
-    if Rails.env.procution?
+    if Rails.env.production?
       $URLSERVER = 'https://redciclar.herokuapp.com/';
     else
       $URLSERVER = 'http://localhost:3000/';
