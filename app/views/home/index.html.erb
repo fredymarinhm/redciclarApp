@@ -1,4 +1,4 @@
-<h1>ImageGram</h1>
+<h2>Bienvenido</h2>
 <%- if user_signed_in? %>
     <p>¡ Bienvenido <%= current_user.name %> !</p>
     <div class="row">
@@ -6,4 +6,5 @@
     </div>
 <% else %>
     <p>Por favor inicia sesión para ver imágenes owo</p>
+    <%= $URLSERVER %>
 <% end %>
