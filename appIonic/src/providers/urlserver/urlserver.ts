@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 
 /*
@@ -11,7 +11,7 @@ import { Injectable } from '@angular/core';
 export class UrlserverProvider {
   public URLSERVER:any;
 
-  constructor(public http: HttpClient) {
+  constructor(public http: Http) {
     console.log('Hello UrlserverProvider Provider');
     //this.URLSERVER = "http://localhost:3000/"
     this.URLSERVER = "https://redciclar.herokuapp.com/";
