@@ -20,7 +20,7 @@ import { SignUpPage } from '../sign-up/sign-up'
 export class WelcomePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public menu: MenuController) {
-    this.menu.enable(false);
+    //this.menu.enable(false);
   }
 
   ionViewDidLoad() {
