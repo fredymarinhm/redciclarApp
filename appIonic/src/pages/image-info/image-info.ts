@@ -25,7 +25,7 @@ export class ImageInfoPage {
     this.img = this.navParams.get('img');
     this.description = this.navParams.get('info');  
     this.fecha = this.navParams.get('fecha');
-    this.urlserver = urlserverprovider;
+    this.urlserver = urlserverprovider.URLSERVER;
   }
 
   ionViewDidLoad() {

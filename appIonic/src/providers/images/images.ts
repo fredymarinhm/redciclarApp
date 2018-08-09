@@ -15,7 +15,7 @@ export class ImagesProvider {
 
   constructor(public http: Http, public urlserverprovider:UrlserverProvider) {
     console.log('Hello ImagesProvider Provider');
-    apiUrl =  urlserverprovider + 'api/v1/'
+    apiUrl =  urlserverprovider.URLSERVER + "api/v1/";
   }
 
   getImage(auth){

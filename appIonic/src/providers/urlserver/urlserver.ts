@@ -16,5 +16,4 @@ export class UrlserverProvider {
     //this.URLSERVER = "http://localhost:3000/"
     this.URLSERVER = "https://redciclar.herokuapp.com/";
   }
-
 }

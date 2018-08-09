@@ -16,7 +16,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, public menu: MenuController, public ImagesProvider: ImagesProvider, public imagesProvider: ImagesProvider,
     public urlserverprovider:UrlserverProvider) {
-    this.urlserver = urlserverprovider;
+    this.urlserver = urlserverprovider.URLSERVER;
     const data= JSON.parse(localStorage.getItem('user'));
     this.userDetails = data.user;
     this.getImagesHome();

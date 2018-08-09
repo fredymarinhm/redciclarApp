@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { UrlserverProvider } from '../urlserver/urlserver';
 
 //Variable para realizar llamdo a la API
-var apiUrl;
+var apiUrl:any;
 
 /*
   Generated class for the AuthServiceProvider provider.
@@ -16,7 +16,7 @@ export class AuthServiceProvider {
 
   constructor(public http: Http, public urlserverprovider: UrlserverProvider) {
     console.log('Hello AuthServiceProvider Provider');
-    apiUrl = urlserverprovider + 'api/v1/';
+    apiUrl = urlserverprovider.URLSERVER + "api/v1/";
   }
 
   postData(credentials, type){
