@@ -13,7 +13,7 @@ export class UrlserverProvider {
 
   constructor(public http: Http) {
     console.log('Hello UrlserverProvider Provider');
-    //this.URLSERVER = "http://localhost:3000/"
-    this.URLSERVER = "https://redciclar.herokuapp.com/";
+    this.URLSERVER = "http://localhost:3000/"
+    //this.URLSERVER = "https://redciclar.herokuapp.com/";
   }
 }
