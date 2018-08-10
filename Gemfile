@@ -36,6 +36,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'devise', git: 'git://github.com/plataformatec/devise.git'
 gem 'jwt'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
