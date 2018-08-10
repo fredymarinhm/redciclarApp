@@ -3,7 +3,6 @@ require 'carrierwave/storage/fog'
 if Rails.env.production?
 	CarrierWave.configure do |config|
 		config.storage = :fog
-		config.fog_porvider = 'fog'
 		config.fog_credentials = {
 			provider:              'AWS',
 			aws_access_key_id:     'AKIAJE4XJSYIBHE3XIXA',
@@ -13,4 +12,8 @@ if Rails.env.production?
 		config.fog_directory  = 'redciclar'
 		
 	end
+else
+  CarrierWave.configure do |config|
+    config.storage :file
+  end
 end
