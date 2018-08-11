@@ -13,7 +13,7 @@ class ImagesController < ApplicationController
     def create
         @image = current_user.images.new images_params
         @image.save
-        #redirect_to '/'
+        redirect_to '/'
     end
 
     def show
